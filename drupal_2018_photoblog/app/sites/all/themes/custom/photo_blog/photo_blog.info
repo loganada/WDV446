@@ -1,0 +1,14 @@
+name = Photo Blog
+description = Photography blog
+core = 7.x
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/photo-blog.css
+
+regions[header] = Header
+regions[content] = Content
+regions[right_column] = Right Column
+regions[left_column]= Left Column
+regions[above_content]= Above Content
+regions[footer] = Footer
