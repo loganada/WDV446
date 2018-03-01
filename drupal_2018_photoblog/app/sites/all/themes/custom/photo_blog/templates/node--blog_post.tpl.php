@@ -83,12 +83,23 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
+  <div class="blog-date">
+  <?php print render($content['field_date']); ?>
+  </div>
+  <div class="blog-image">
+    <div class="blog-title">
+        <?php print render($title_prefix); ?>
+        <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+        <?php print render($title_suffix); ?>
+        <div class="img-caption">
+          <?php print render($content['field_img_caption']); ?>
+        </div>
+    </div>
 
-  <?php print render($content['field_image']); ?>
+  <?php print render($content['field_blog_image']); ?>
+</div>
 
-  <?php print render($title_prefix); ?>
-    <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
-  <?php print render($title_suffix); ?>
+
 
   <?php if ($display_submitted): ?>
     <div class="submitted">
@@ -101,7 +112,8 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      print render($content);
+      //print render($content);
+      print render($content['body']);
     ?>
   </div>
 

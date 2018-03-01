@@ -30,6 +30,7 @@
             ?>
         </div>
 
+        <!--view and edit-->
         <!-- tabs will go here -->
         <div class="tab-container container">
             <?php if ($tabs): ?>
@@ -46,7 +47,7 @@
                   </div>
               <?php endif; ?>
           </div>
-          
+
             <div class="main-content left <?php print $variables["photo_blog"]["body_class"]?>">
                 <div class="content">
 
