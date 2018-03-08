@@ -19,3 +19,22 @@
   position: relative;
   left: 15px;
 }
+.blog-view block{
+margin-bottom: 1em;
+border-bottom: 1px solid black;
+}
+.blog-list-title a{
+  text-decoration: none;
+}
+.blog-list-title a:hover{
+  text-decoration: underline;
+}
+.blog-list-date{
+font-size: .8em;
+color: gray;
+}
+
+.two-column-gallery-img{
+  display: inline-block;
+  width: 48%;
+}
