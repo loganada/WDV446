@@ -37,8 +37,15 @@
                   <?php print render($tabs); ?>
             <?php endif; ?>
         </div>
-
-
+        <!--slideshow-->
+        <div class="slideshow region">
+            <?php if($page['slideshow']): ?>
+                <div class="slideshow-inner">
+                    <?php print render($page['slideshow']); ?>
+                </div>
+            <?php endif; ?>
+        </div>
+<!--main content-->
         <div class="content inner-container clearfix">
           <div class="left-column column region left <?php print $variables["photo_blog"]["column_class"]?>">
               <?php if($page['left_column']): ?>
